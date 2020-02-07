@@ -20,7 +20,7 @@ import App from './App.vue'
 // Vuex store instance
 import store from './store'
 // import LocalStore
-import LocalStore from './store/LocalStore'
+import LocalStore from '@johnnywang/vuex-localstorage'
 
 // register
 LocalStore.register(store);
@@ -125,7 +125,7 @@ Use `bindLocalStore` method, we can bind LocalStore data into components's `comp
 </template>
 
 <script>
-import { bindLocalStore } from './store/LocalStore';
+import { bindLocalStore } from '@johnnywang/vuex-localstorage';
 
 export default {
   name: 'Hello',
@@ -152,7 +152,7 @@ By default, state is empty. You can add some default value to localStore in `sta
 
 ```javascript
 import store from './store';
-import LocalStore from './store/LocalStore';
+import LocalStore from '@johnnywang/vuex-localstorage';
 
 // register
 LocalStore.register(store, {
