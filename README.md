@@ -204,9 +204,9 @@ LocalStore.register(store, {
   state: {
     name: 'Johnny',
     age: 100,
-    show: false
-  },
-  expire: '2020-03-01' // String will put into new Date()
+    show: false,
+    expire: '2020-03-01' // String will put into new Date()
+  }
 });
 ```
 
