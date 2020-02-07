@@ -69,7 +69,8 @@ export default {
       stateKey,
       userKey,
       encode,
-      state
+      state,
+      getters
     } = options;
     stateKey && (VuexKey = stateKey);
     userKey && (WebKey = userKey);
@@ -79,6 +80,7 @@ export default {
       state: {
         [VuexKey]: state || {}
       },
+      getters: getters || {},
       actions,
       mutations,
     };

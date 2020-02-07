@@ -164,6 +164,13 @@ LocalStore.register(store, {
 });
 ```
 
+**getters**
+
+  - type: {Object}
+  - default: `{}`
+
+Getters to be set in Vuex module.
+
 **stateKey**
 
   - type: {String}
@@ -186,6 +193,24 @@ real key for Web LocalStorage where stores the data from Vuex.
   - default: `false`
 
 Encode data stores in Web LocalStorage.
+
+
+## Expired Handling
+
+set `expire` key into `state` as following:
+
+```javascript
+LocalStore.register(store, {
+  state: {
+    name: 'Johnny',
+    age: 100,
+    show: false
+  },
+  expire: '2020-03-01' // String will put into new Date()
+});
+```
+
+if the user's localstorage data had contain `expire` key, then if expire date is over now, the data will be injected into Vuex, if the data is outdated, it will be overwriten by Vuex's setting default.
 
 
 ## Warning
