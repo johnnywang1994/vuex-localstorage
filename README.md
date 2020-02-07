@@ -10,7 +10,7 @@ A Vuex Plugin, help dealing with Vuex data & Web LocalStorage. Since LocalStorag
 ```cmd
 $ npm i @johnnywang/vuex-localstorage
 or
-$ yarn install @johnnywang/vuex-localstorage
+$ yarn add @johnnywang/vuex-localstorage
 ```
 
 ```javascript
