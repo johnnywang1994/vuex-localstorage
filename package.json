@@ -1,6 +1,6 @@
 {
   "name": "@johnnywang/vuex-localstorage",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A tiny plugin for Vuex, handling with localStorage",
   "main": "index.js",
   "repository": {
