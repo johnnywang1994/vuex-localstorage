@@ -25,7 +25,7 @@ const actions = {
         ...state[VuexKey],
         ...(
           oldStore.expire
-            ? Date.now() < oldStore.expire && oldStore
+            ? Date.now() < new Date(oldStore.expire) && oldStore
             : oldStore
         ),
       });
